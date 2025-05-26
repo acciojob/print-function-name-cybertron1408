@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <title>Print Function Name</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+  <button onclick="functionName()">Click to show function name</button>
+
+  <script>
+    function functionName() {
+      alert(arguments.callee.name);
+    }
+  </script>
 
 </body>
-
 </html>
